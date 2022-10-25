@@ -1,4 +1,28 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 #nav-logo{
-    width: 172px;
-    height: 110px;
+    width: 10.75rem;
+    height: 5.625rempx;
+    margin-right: 2.5rem
+}
+ul{
+    list-style:none;
+}
+ul> img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.3rem;
+}
+ul>img:hover{
+    cursor: pointer;
+}
+#input{
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 400px;
+    height: 40px;
+    margin: auto 0;
 }
