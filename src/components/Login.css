@@ -1,0 +1,44 @@
+.login_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 35%;
+}
+.kakao_des{
+    font-size: 12px;
+}
+
+.kakao_bt {
+    background-color: #fdeb2f;
+    color: black;
+    border-color: #fdeb2f;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+.login_input {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+}
+
+.login_bt {
+    background-color: #050744;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+.join_box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
