@@ -6,11 +6,13 @@
     text-align: center;
     max-width: 35%;
 }
-.kakao_des{
+
+.kakao_des {
     font-size: 12px;
 }
 
 .kakao_bt {
+    border-width: thin;
     background-color: #fdeb2f;
     color: black;
     border-color: #fdeb2f;
@@ -26,10 +28,22 @@
     justify-content: center;
     max-width: 100%;
     text-align: center;
+
+}
+
+.login_input input {
+    margin-top: 10px;
+    height: 30px;
+    border-width: thin;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: #706e6e;
 }
 
 .login_bt {
-    background-color: #050744;
+    border-width: thin;
+    background-color: #02031a;
     color: white;
     border-radius: 8px;
     width: 100%;
@@ -40,5 +54,60 @@
     display: flex;
     justify-content: center;
     text-align: center;
+}
 
+.naver_bt {
+    background-color: #05a401;
+    color: white;
+    border-width: thin;
+    border-color: #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+.google_bt {
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: black;
+    border-width: thin;
+    border-color: #4b4a45;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+}
+
+.kakao_one {
+    border-color: white;
+    border-radius: 3px;
+    margin-top: 10px;
+    background-color: #eeeeee;
+    font-size: 5px;
+    text-align: left;
+    padding: 8px;
+}
+
+.kakao_one span {
+    color: #8a8888;
+    font-size: 1px;
+}
+
+.line {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 15px;
+    margin: 8px 0px;
+}
+
+.line::before,
+.line::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 0px;
 }
