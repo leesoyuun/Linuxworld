@@ -13,8 +13,8 @@ function Login(props) {
             <div>
                 <p>banner</p>
             </div>
-            <div>
-                <span>-----------또는-----------</span>
+            <div className="line">
+                <span>또는</span>
             </div>
             <div>
                 <div>
@@ -37,21 +37,17 @@ function Login(props) {
                         <p> 아이디찾기 | </p>
                         <p>비밀번호 찾기</p>
                     </div>
-                    <div>
-                        <span>-----------또는-----------</span>
+                    <div className="line">
+                        <span>또는</span>
                     </div>
                     <div>
-                        <p>
-                            네이버
-                        </p>
-                        <p>
-                            구글
-                        </p>
+                        <button className="naver_bt">네이버 로그인</button>
+                        <button className="google_bt">구글 로그인</button>
                     </div>
-                    <div>
+                    <div className="kakao_one">
                         <b>카카오 1초 로그인 / 회원가입이란?</b>
                         <br/>
-                        카카오 싱크를 활용한 간편 로그인 / 가입 기능입니다.
+                        <span>카카오 싱크를 활용한 간편 로그인 / 가입 기능입니다.</span>
                     </div>
                 </div>
             </div>
