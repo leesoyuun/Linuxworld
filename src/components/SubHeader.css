@@ -1,0 +1,21 @@
+.subnav > ul {
+    display: flex;
+}
+#sub_ul > li{
+    margin: 0px 13px;
+}
+.sub_btn{
+    margin: auto 0;
+}
+#today_start{
+    width: 7rem;
+    height: 3.125rem;
+    background-color: #F4AA00;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-left:8.5rem;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
