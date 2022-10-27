@@ -12,7 +12,6 @@ function HomePage() {
             <Header/>
             <SubHeader/>
         </div>
-
     )
 }
 export default HomePage
