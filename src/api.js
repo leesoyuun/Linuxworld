@@ -1,7 +1,11 @@
 import axios from "axios";
 
 
+const Instance = axios.create({
+    baseURL: "http://127.0.0.1:8000/api/v1/"
+})
+
 export async function getProfile(){
-    const response = await axios.get("http://127.0.0.1:8000/api/v1/profile/1/");
+    const response = await Instance.get("profile/1/");
     return response.data;
 };
