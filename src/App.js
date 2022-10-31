@@ -1,12 +1,12 @@
 import logo from './logo.svg';
-import HomePage from './pages/home/HomePage';
+// import HomePage from './pages/home/HomePage';
 import Login from "./components/Login";
 
 function App() {
 
   return (
     <div className="App">
-        <HomePage />
+        {/*<HomePage />*/}
         <Login />
     </div>
   );

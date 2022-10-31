@@ -4,21 +4,22 @@ import "./Login.css"
 function Login(props) {
     return (
         <div className="login_wrapper">
-            <h2>로그인</h2>
+            <h1>로그인</h1>
             <p className="kakao_des">카카오로 1초안에 로그인 하세요.<br/>
                 아래 버튼 클릭만 하면 끝!</p>
             <div>
                 <button className="kakao_bt">카카오 1초 로그인/회원가입</button>
             </div>
-            <div>
-                <p>banner</p>
+            <div className="join_coupon">
+                <img src={require('../join_coupon.png')} />
             </div>
             <div className="line">
                 <span>또는</span>
             </div>
             <div>
-                <div>
-                    <p>회원 비회원</p>
+                <div className="member_choice">
+                    <a>소나 회원이세요?</a>
+                    <a className="on">비회원이세요?</a>
                 </div>
                 <div>
                     <div className="login_input">
@@ -26,8 +27,9 @@ function Login(props) {
                         <input placeholder="비밀번호"/>
                     </div>
 
-                    <div>
-                        <p>옵션</p>
+                    <div className="login_option">
+                        <p>o 아이디 저장</p>
+                        <p>o 로그인 상태 유지</p>
                     </div>
                     <div>
                         <button className="login_bt">로그인</button>
