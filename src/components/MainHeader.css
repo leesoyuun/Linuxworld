@@ -1,5 +1,6 @@
 .nav{
     display: flex;
+    justify-content: center;
 }
 #nav-logo{
     width: 10.75rem;
