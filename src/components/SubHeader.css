@@ -7,9 +7,11 @@
     display: flex;
 }
 #sub_ul > li{
-    margin-left:20px;
     cursor: pointer;
     font-weight: 600;
+}
+#sub_ul > li:nth-child(2){
+    margin-left: 10px;
 }
 #sub_ul > li:nth-child(2){
     color: #9F44F8;
@@ -17,9 +19,12 @@
 #sub_ul > li:nth-child(3){
     color: #FF5180;
 }
-#sub_ul > li>a:hover{
+#sub_ul > li > a{
+    padding: 4px 8px;
+    font-weight: bold;
+}
+#sub_ul > li > a:hover{
     background-color: #FF7D9E;
-    padding: 5px 8px;
     color: #FFF;
     font-weight: bold;
 }
@@ -32,10 +37,8 @@
     font-weight: lighter;
     color: #FFF;
     padding: 14px 16px 14px 10px;
-    font-size: 14px;
     white-space: nowrap;
     display: none;
-    opacity: 1;
 }
 #sub_menu>li{
     padding-top:10px
