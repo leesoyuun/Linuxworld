@@ -14,3 +14,8 @@ export const logOut = () => instance.post("logout/", null, {
         "X-CSRFToken": Cookies.get("csrftoken")
     }
 }).then(response => response.data)
+export const usernameLogin = ({ username, password }) => instance.post(
+    "login/",
+    { username, password },
+    { headers: {"X-CSRFToken": Cookies.get("csrftoken")} }
+).then(response => response.data);
