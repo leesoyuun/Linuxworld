@@ -1,4 +1,4 @@
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { getProfile, getMe, logOut } from '../../api';
 import Header from '../../components/MainHeader'
 import SubHeader from '../../components/SubHeader'
@@ -8,7 +8,11 @@ function HomePage() {
     const { isLoading, data, isError } = useQuery(["me"], getMe, {
         retry: false
     });
-    const onLogOut = async() => await logOut();
+    const queryClient = useQueryClient();
+    const onLogOut = async() => {
+        await logOut();
+        queryClient.refetchQueries(["me"]); 
+    };
     return(
         <div>
             {isLoading ? <Header /> : (
