@@ -30,34 +30,10 @@ function HomePage() {
         queryClient.refetchQueries(["me"]); 
       };
     return(
-        <div>
-            {isLoading ? <Header /> : (
-                isError ? <Header /> : (
-                    <>
-                    <h1>{data.username}</h1>
-                    <button onClick={onLogOut}>logout</button>
-                    <form onSubmit={onSubmit}>
-                        <input 
-                            required
-                            name="username"
-                            onChange={onChange}
-                            value={username}
-                            placeholder="username"
-                        />
-                        <input 
-                            required
-                            name="password"
-                            onChange={onChange}
-                            value={password}
-                            type="password"
-                            placeholder="password"
-                        />
-                        <button type="submit">login</button>
-                    </form>
-                    </>
-                    )
-                ) }
-        </div>
+        <>
+        <Header />
+        <SubHeader />
+        </>
     )
 }
 export default HomePage

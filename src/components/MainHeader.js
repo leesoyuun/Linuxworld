@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { getMe } from '../api';
 import './MainHeader.css';
 
-function mainheader(){
+function Mainheader(){
+    // const [loggedIn, setLoggedIn] = useState("");
+    
+    let getUsername;
+    // getMe().then(response => {response.username ? getUsername = response.username : setLoggedIn(true)} : );
+    // console.log(loggedIn);
     return(
         <header className='mainheader'>
+            <nav className="topNav">
+                <span>회원가입</span>
+                <span>고객센터</span>
+                <h1>
+                {getUsername ? "로그아웃" : "로그인"}
+                </h1>
+                <span>로그인</span>
+            </nav>
             <nav className='nav'>
                 <img id='nav-logo' src={require('../assets/img/Logo.jpg')}/>
                 <input id='input'/>
@@ -27,4 +41,4 @@ function mainheader(){
         </header>
     )
 }
-export default mainheader
+export default Mainheader

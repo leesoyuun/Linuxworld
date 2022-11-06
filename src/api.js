@@ -18,4 +18,10 @@ export const usernameLogin = ({ username, password }) => instance.post(
     "login/",
     { username, password },
     { headers: {"X-CSRFToken": Cookies.get("csrftoken")} }
-).then(response => response.data);
+).then(response => {
+    if(response.data.status === 'welcome'){
+        window.location.href = "/";
+    } else{
+        alert("잘못됨");
+    }
+});
