@@ -3,20 +3,17 @@ import { getMe } from '../api';
 import './MainHeader.css';
 
 function Mainheader(){
-    // const [loggedIn, setLoggedIn] = useState("");
-    
-    let getUsername;
-    // getMe().then(response => {response.username ? getUsername = response.username : setLoggedIn(true)} : );
-    // console.log(loggedIn);
+    getMe().then(res => setCheckUsername(res.username));
+    const [checkUsername, setCheckUsername] = useState();
     return(
         <header className='mainheader'>
             <nav className="topNav">
                 <span>회원가입</span>
                 <span>고객센터</span>
-                <h1>
-                {getUsername ? "로그아웃" : "로그인"}
-                </h1>
-                <span>로그인</span>
+                {checkUsername ?
+                <span>로그아웃</span> :
+                <a href="/login">로그인</a>
+                }
             </nav>
             <nav className='nav'>
                 <img id='nav-logo' src={require('../assets/img/Logo.jpg')}/>
